@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentellela Alela! | </title>
+    <title>D-Mon | </title>
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
@@ -20,11 +20,17 @@
     <!-- bootstrap-progressbar -->
     <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+
     <!-- Custom Theme Style -->
     <!-- Mickey edit this file -->
     <link href="../build/css/custom.css" rel="stylesheet">
     <!-- link href="../build/css/custom.min.css" rel="stylesheet" -->
-    <link href="./css/sanwa.css" rel="stylesheet">
+
   </head>
 
   <body class="nav-md">
@@ -33,28 +39,89 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><span style="position:absolute;left:25%;right:25%;">Welcome</span></a>
+              <p></p>
+              <table style="color:white;width:100%;">
+                <tr>
+                  <td style="width:50%"></td>
+                  <td style="width:50%"></td>
+                </tr>
+                <!-- <tr> <! date time
+                  <td style="padding-left:10px;" id="text_day"></td>
+                  <td colspan="2" style="padding-right:10px;text-align:right;" id="text_time"></td>
+                </tr>  -->
+                <tr> <!-- profile picture-->
+                  <td colspan="2">
+                    <div class="profile">
+                      <div class="profile_pic">
+                        <img src="images/img2.jpg" alt="..." class="img-circle profile_img">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="height: 5px"></td>
+                </tr>
+                <tr> <!-- welcome & username-->
+                  <td class="site_welcome">
+                   Welcome,&nbsp;
+                  </td>
+                  <td class="site_normal">
+                    USER007
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center">
+                    ______________________
+                  </td>
+                </tr>
+                <tr> <!-- Side Menu -->
+                  <td style="width:20%"></td>
+                  <td style="width:80%"></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                      <div class="menu_section">
+                        <ul class="nav side-menu">
+                          <li><a href="index.html"><i class="fa fa-list"></i>&nbsp;&nbsp; Buildings </a>
+                          </li>
+                          <li><a href="summary.html"><i class="fa fa-signal"></i>&nbsp;&nbsp; Summary </span></a>
+                          </li>
+                          <li><a href="settings.html"><i class="fa fa-gear"></i>&nbsp;&nbsp; Settings account </a>
+                          </li>
+                          <li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp; About </a>
+                          </li>
+                          <li><a href="help.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp; Help &amp; Support </a>
+                          </li>
+                          <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp; Log out </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
-
+<!-- menu profile quick info
             <div class="clearfix"></div>
 
-            <!-- menu profile quick info -->
+
             <div class="profile" style="left:50%;">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="images/img2.jpg" alt="..." class="img-circle profile_img">
               </div>
-              
+
             </div>
-            <!-- /menu profile quick info -->
 
-            </br></br></br></br></br></br></br></br>
 
+            <div class="clearfix"></div>
+menu profile quick info -->
             <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <!--  <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>____________________________</h3>
+                <p style="color:#FFFFFF;text-align:center;">____________________________</p>
                 <ul class="nav side-menu">
-                  <li><a href="index.html"><i class="fa fa-list"></i> Building </a>
+                  <li><a href="index.html"><i class="fa fa-list"></i> Buildings </a>
                   </li>
                   <li><a href="summary.html"><i class="fa fa-signal"></i> Summary </span></a>
                   </li>
@@ -64,12 +131,12 @@
                   </li>
                   <li><a href="help.html"><i class="fa fa-question-circle"></i> Help &amp; Support </a>
                   </li>
-                  <li><a href="logout.html"><i class="fa fa-power-off"></i> Log out </a>
+                  <li><a href="login.html"><i class="fa fa-power-off"></i> Log out </a>
                   </li>
                 </ul>
               </div>
 
-            </div>
+            </div> -->
             <!-- /sidebar menu -->
 
           </div>
@@ -77,80 +144,93 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-            <div class="row">
-                <h1 class="res_head">BUILDING</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor res_img">
-                    DD Residence I
-                    <img src="images/res1.jpg" class="img-responsive center-block">
-                    </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor">
-                    DD Residence I
-                    <img src="images/res1.jpg"  class="img-responsive center-block res_img">
-                    </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor">
-                    DD Residence I
-                    <img src="images/res1.jpg"  class="img-responsive center-block res_img">
-                    </div>
-                    </a>
-                </div>
-                
-            </div>
-            <div class="row res_top">
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor res_img">
-                    DD Residence I
-                    <img src="images/res1.jpg" class="img-responsive center-block">
-                    </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor">
-                    DD Residence I
-                    <img src="images/res1.jpg"  class="img-responsive center-block res_img">
-                    </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                    <div class="text-center res_bor">
-                    DD Residence I
-                    <img src="images/res1.jpg"  class="img-responsive center-block res_img">
-                    </div>
-                    </a>
-                </div>
-                
-            </div>
-
+          <div style="font-size:40px;"><b>Buildings</b></div>
+          <br />
+          <div class="clearfix"></div>
+          <div style="position:absolute;left:35%;">
+            <img class="btn" src="images/res01.png" width="300px">
+            <img class="btn" src="images/res02.png" width="300px">
+          </div>
         </div>
         <!-- /page content -->
 
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
       </div>
     </div>
+    <script>
+    setInterval(function(){
+    var temp = new Date();
+    //console.log(temp);
+    var temp_date = temp.getDate();
+    if(temp_date<10){
+      temp_date = '0'+temp_date;
+    }
+    var temp_year = temp.getFullYear();
+    /*
+    var temp_month = temp.getMonth()+1;
+    if(temp_month<10){
+      temp_month = '0'+temp_month;
+    }
+    */
+    //--------- Month Name ---------//
+      switch (temp.getMonth()){
+        case 0:
+            temp_month = "Jan";
+            break;
+        case 1:
+            temp_month = "Feb";
+            break;
+        case 2:
+            temp_month = "Mar";
+            break;
+        case 3:
+            temp_month = "Apr";
+            break;
+        case 4:
+            temp_month = "May";
+            break;
+        case 5:
+            temp_month = "Jun";
+            break;
+        case 6:
+            temp_month = "Jul";
+            break;
+        case 7:
+            temp_month = "Aug";
+            break;
+        case 8:
+            temp_month = "Sep";
+            break;
+        case 9:
+            temp_month = "Oct";
+            break;
+        case 10:
+            temp_month = "Nov";
+            break;
+        case 11:
+            temp_month = "Dec";
+            break;
+      }
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    var temp_today = temp_date+" "+temp_month+" "+temp_year;
+    //console.log(temp_today);
+
+    var temp_hour = temp.getHours();
+    if(temp_hour<10){
+      temp_hour = '0'+temp_hour;
+    }
+    var temp_min = temp.getMinutes();
+    if(temp_min<10){
+      temp_min = '0'+temp_min;
+    }
+    var temp_sec = temp.getSeconds();
+    if(temp_sec<10){
+      temp_sec = '0'+temp_sec;
+    }
+
+    //  $('#text_day').html(temp_today);
+      $('#text_time').html(temp_today+'  '+temp_hour+':'+temp_min+':'+temp_sec);
+    }, 1000);
+    </script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
@@ -165,8 +245,6 @@
     <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- Skycons -->
-    <script src="../vendors/skycons/skycons.js"></script>
     <!-- Flot -->
     <script src="../vendors/Flot/jquery.flot.js"></script>
     <script src="../vendors/Flot/jquery.flot.pie.js"></script>
@@ -185,6 +263,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-  
+
   </body>
 </html>
