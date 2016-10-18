@@ -680,13 +680,26 @@ a:hover, a:focus {
   display: block;
   padding: 4px 6px; }
 
+  /*Part Gift*/
+
 footer {
   background: #fff;
-  padding: 15px 20px;
-  display: block; }
+  /*padding: 15px 20px;*/
+  display: block;
+   }
+
+footer_wave {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-image:url('../../production/images/footercut3.png');
+   background-repeat : repeat-x;
+ }
+ /*End part gift */
 
 .nav-sm footer {
-  margin-left: 70px; }
+  margin-left: 70px; } 
 
 .footer_fixed footer {
   position: fixed;
@@ -3137,7 +3150,8 @@ ul.project_files li a i {
 /* *********  /ecommerce  **************************** */
 /** login **/
 .login {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  } /* Gift focus it old set #FFFFFF future edit address file.png*/ 
 
 .login .fa-paw {
   font-size: 26px; }
