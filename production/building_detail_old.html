@@ -143,79 +143,71 @@ menu profile quick info -->
         </div>
 
         <!-- page content -->
+        <div class="right_col" role="main">
+      <!-- /Ploy do line number 147 - 200 -->
+      <head>
+        <style type="text/css">
+            table.coll
+          {
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: #3581B8;
+            width: 600px;
 
+            position: absolute;
+            bottom: 200px;
+            right: 400px;
+          }
+        </style>
+        <style>
+            table
+           {
+            border-collapse: collapse;
 
+           }
 
-        <!-- ploy part-->
-     <div class="right_col" role="main">
-          <div style="font-size:40px;"><b>Buildings</b></div>
-          <br />
-          <div class="clearfix"></div>
+            th, td
+           {
+            text-align: midle;
+            padding: 8px;
+            color: #3581B8;
+           }
 
-        <!--image button infor and bell -->
-          <div>
-            <table style="margin-left:0%; margin-top: 0%; font-size: 18px;">
-                <tr  style=" margin-left: 30px;">
-                    <td width="2%" style=" padding: 2%; vertical-align: top;">
-                      <img src="images/res01cut.png" style="width:150px;height:150px;">
-                    </td>
+            tr:nth-child(even){background-color: #f2f2f2}
 
-                    <td width="25%" style="padding: 2%; vertical-align: top;"><h3 style="color:#f4af43"><b>DD Residence I</b></h3>
-                   <br>
-                   <button class="btn btn-default">Infor..</button>
-                      <button style="margin-left:5%;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></button>
-                    </td>
+            th
+           {
+            background-color: white;
+            color: #3581B8;
+           }
+        </style>
+      </head>
+      <body>
 
-            </table>
-          </div>
-              <!--image button building and floor -->
-          <div>
-            <table style="margin-left:1.5%; margin-top: -5%; font-size: 18px;">
-                    <td width="70%" style="padding: 18%; vertical-align: top;">
-                      <button class="btn botton_aboveTable btn-sm">Building 1  <span class=" glyphicon glyphicon-chevron-down" aria-hidden="true"></span> </button>
-                      <button class="btn botton_aboveTable btn-sm">Floor 1  <span class=" glyphicon glyphicon-chevron-down" aria-hidden="true"></span> </button>
-                      <button class="btn botton_aboveTable btn-sm"><span class=" glyphicon glyphicon-zoom-in" aria-hidden="true"></span> </button>
-                    </td>
-            </table>
-          </div>
-
-
-             <!-- building floor search-->
-
-
-
-
-
- <div class= "small_table">
-        <table class="coll" border="2">
+        <table class="coll" border="1">
           <tr>
-           <th style="text-align:center; padding:8px;">Room</th>
-           <th style="text-align:center; ">Water Flow Status</th>
-           <th style="text-align:center; ">Time</th>
-           <th style="text-align:center; ">Detection</th>
+           <th>Room</th>
+           <th>Water Flow Status</th>
+           <th>Time</th>
+           <th>Detection</th>
           </tr>
-
-
           <tbody id="ploy_table">
           <tr>
-
-
-            <td style="padding:8px;">123</td>
+            <td>123</td>
             <td>Overload</td>
             <td>60</td>
             <td>ABC</td>
-
           </tr>
           </tbody>
         </table>
-</div>
-       <!-- </body> -->
 
+        </body>
 
-        <!--end ploy part -->
+        </div>
         <!-- /page content -->
 
-
+      </div>
+    </div>
     <script>
     setInterval(function(){
     var temp = new Date();

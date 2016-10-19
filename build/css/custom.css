@@ -1247,6 +1247,56 @@ div.box {
   border: 1px solid #8080FF;
   background-color: #E5E5FF; }
 
+  /* part ploy */
+   table.coll
+          {
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: #56C2E3;
+            width: 600px;
+
+            position: absolute;
+            bottom: 150px;
+            right: 400px;
+
+          }
+          /*Don't understand it's made --------- white color*/
+   /*table
+           {
+            border-collapse: collapse;
+           }
+
+            th, td
+           {
+            color: #3581B8;
+           }
+
+            tr:nth-child(even)
+
+            th
+
+           {
+            background-color: white;
+            color: #3581B8;
+            bottom: 200px;
+            right: 400px;
+           }*/
+
+  .small_table{
+
+    text-align: center;
+    color: #56C2E3;
+    padding: 8px;
+  }
+
+  .botton_aboveTable{
+    border-color: #56C2E3;
+    background-color: #56C2E3;
+    color: white;
+  }
+
+  /*end part ploy */
+
 /* *********  /tables styling  ****************************** */
 /* *********  /dashboard widget  **************************** */
 /* *********  widgets  *************************************** */
